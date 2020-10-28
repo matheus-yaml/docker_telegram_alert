@@ -22,10 +22,10 @@ if mem_livre <  500:
 	for c in  open('docker.txt', 'r'):
 		lista += c
 
-os.system(f"""
-	curl -X POST \
-	-H 'Content-Type: application/json' \
-	-d '{{"chat_id": "xxxxxxxxxx", "text": "{lista}", "disable_notification": false}}' \
-	https://api.telegram.org/botxxxxxxxxxxx:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/sendMessage  """)
+	os.system(f"""
+		curl -X POST \
+		-H 'Content-Type: application/json' \
+		-d '{{"chat_id": "xxxxxxxxxx", "text": "{lista}", "disable_notification": false}}' \
+		https://api.telegram.org/botxxxxxxxxxxx:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/sendMessage  """)
 
 
